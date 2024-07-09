@@ -1,0 +1,14 @@
+{% extends 'signup.html' %}
+
+{%block login%}
+<h1>Login</h1>
+<p class="heading">Please enter your account details!</p>
+{%for message in messages%}
+<p class="validations">{{message}}</p>
+{%endfor%}
+<input type="text" name="username" placeholder="Username" required>
+
+<input type="password" name="password" placeholder="Password" required>
+<a class=" " href="{%url 'signup'%}">Dont Have An Account ?</a>
+<input type="submit" name="" value="Login" href="#">
+{%endblock%}
